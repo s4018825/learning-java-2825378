@@ -1,20 +1,20 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int tommyAge = 25;
-        double tommyGPA = 0.9;
-        char tommyInitial = 'T';
-        char tommyLastInitial = 'T';
-        Boolean hasPerfectAttendance = false;
-        String firstName = "Tommy";
-        String secondName = "Tran";
+        double studentGPA = 1.1;
+        String studentFirstName = "Tommy";
+        String studentLastName = "Tran";
+        System.out.println(studentFirstName + 
+            " " + studentLastName + " has a GPA of " + studentGPA + ".");
 
-        System.out.println(tommyAge);
-        System.out.println(tommyGPA);
-        System.out.println(tommyInitial);
-        System.out.println(tommyLastInitial);
-        System.out.println(hasPerfectAttendance);
-        System.out.println(firstName);
-        System.out.println(secondName);
+        System.out.println("What do you want to update it to?");
+
+        Scanner scnr = new Scanner(System.in);
+        studentGPA = scnr.nextDouble();
+
+        System.out.println(studentFirstName + " " + 
+        studentLastName + " now has a GPA of " + studentGPA + ".");
     }
 }
